@@ -50,6 +50,16 @@ div.links { min-height: 10vh;}
         background-size: auto 150px, auto;
         /* background-size: 180px auto, auto; */
     }
+    div.intro { min-height: 80vh;}
+    div.links { min-height: 10vh;}
+    .parallax {
+        position: relative;
+        width: 100%;
+        min-height: 120vh;
+        background-attachment: fixed;
+        /* background-size: cover; */
+        /* overflow-y: fixed; */
+    }
 }
 
 .main {
