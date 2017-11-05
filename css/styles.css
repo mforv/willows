@@ -2,27 +2,38 @@
 
 body { font-family: 'EB Garamond', serif; color: #111; margin-top: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
 
-h1 { font-family: 'EB Garamond', serif; font-size: 56px; margin-top: 20px; margin-bottom: 20px;  text-align: center; color: #111; padding-top: 40px; padding-bottom: 40px; }
+h1 { font-family: 'EB Garamond', serif; font-size: 56px; margin-top: 20px; margin-bottom: 20px;  text-align: center; color: #1c2436; padding-top: 40px; padding-bottom: 40px; }
 h2 { font-family: 'EB Garamond', serif; font-size: 42px; margin-top: 20px; margin-bottom: 20px;  color: #111; padding-top: 0 }
 h3 { font-family: 'EB Garamond', serif; font-size: 28px; margin-top: 15px; margin-bottom: 15px;  color: #111; padding-top: 0 }
 h4 { font-family: 'EB Garamond', serif; font-size: 24px; margin-top: 10px; margin-bottom: 10px;  color: #111; padding-top: 0 }
 p  { font-size: 22px; line-height: 1.1em; text-align: justify; margin-top: 0; margin-bottom: 1.0em;}
-p.lead  { color: #111; font-size: 30px; line-height: 1.1em; text-align: center; margin-top: 0; margin-bottom: 1.0em;}
+p.lead  { color: #1c2436; font-size: 30px; line-height: 1.1em; text-align: center; margin-top: 0; margin-bottom: 1.0em;}
 p.poetry { text-align: center; font-style: italic; line-height: 0.75em;}
 p.date { font-size: 24px; text-align: right; font-style: italic; line-height: 1.0em;}
 p.bottom { font-size: 20px; text-align: center; margin-bottom: 0.5em;}
 p.thanks {text-align: left;}
 hr { margin-top: 5px; margin-bottom: 5px;}
 
-a:link, a:visited  {	color: #4b639b; text-decoration: none;}
+a:link, a:visited  { color: #4b639b; text-decoration: none;}
 a:hover { text-decoration: underline; }
 
-.band {
+div.intro { min-height: 90vh;}
+div.links { min-height: 10vh;}
+
+/* .band {
     background: #42588a url("../img/willows_back.jpg") no-repeat;
+} */
+.band {
+    background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 19em, center top;
+    background-color: #42588a;
+    /* background-size: auto 20%, auto; */
+    background-size: 180px auto, auto;
 }
 @media only screen and (max-width: 768px)
 {
-    .band { background: #42588a url("../img/willows_back.jpg") no-repeat -375px;}
+    /* .band { background: #42588a url("../img/willows_back.jpg") no-repeat -375px;} */
 }
 
 .donate_form {display: block;}
@@ -31,6 +42,14 @@ a:hover { text-decoration: underline; }
 {
     .donate_form {display: none;}
     .donate_button {display: block;}
+    .band {
+        background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top, center top;
+        background-color: #42588a;
+        background-size: auto 150px, auto;
+        /* background-size: 180px auto, auto; */
+    }
 }
 
 .main {
@@ -41,6 +60,6 @@ a:hover { text-decoration: underline; }
     width: 100%;
     min-height: 100vh;
     background-attachment: fixed;
-    background-size: cover;
+    /* background-size: cover; */
     overflow-y: fixed;
 }
