@@ -43,23 +43,14 @@ div.links { min-height: 10vh;}
     .donate_form {display: none;}
     .donate_button {display: block;}
     .band {
-        background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
-        background-repeat: no-repeat, no-repeat;
         background-position: center top, center top;
         background-color: #42588a;
         background-size: auto 150px, auto;
-        /* background-size: 180px auto, auto; */
     }
     div.intro { min-height: 80vh;}
     div.links { min-height: 10vh;}
-    .parallax {
-        position: relative;
-        width: 100%;
-        min-height: 120vh;
-        background-attachment: fixed;
-        /* background-size: cover; */
-        /* overflow-y: fixed; */
-    }
+    .parallax { min-height: 120vh;}
+    h1 { padding-top: 40px; padding-bottom: 20px; }
 }
 
 .main {
