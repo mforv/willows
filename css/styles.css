@@ -20,38 +20,16 @@ a:hover { text-decoration: underline; }
 div.intro { min-height: 90vh;}
 div.links { min-height: 10vh;}
 
-/* .band {
-    background: #42588a url("../img/willows_back.jpg") no-repeat;
-} */
 .band {
     background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center 19em, center top;
     background-color: #42588a;
-    /* background-size: auto 20%, auto; */
     background-size: 180px auto, auto;
-}
-@media only screen and (max-width: 768px)
-{
-    /* .band { background: #42588a url("../img/willows_back.jpg") no-repeat -375px;} */
 }
 
 .donate_form {display: block;}
 .donate_button {display: none;}
-@media only screen and (max-width: 450px)
-{
-    .donate_form {display: none;}
-    .donate_button {display: block;}
-    .band {
-        background-position: center top, center top;
-        background-color: #42588a;
-        background-size: auto 150px, auto;
-    }
-    div.intro { min-height: 80vh;}
-    div.links { min-height: 10vh;}
-    .parallax { min-height: 120vh;}
-    h1 { padding-top: 40px; padding-bottom: 20px; }
-}
 
 .main {
     background: #FFF no-repeat;
@@ -63,4 +41,19 @@ div.links { min-height: 10vh;}
     background-attachment: fixed;
     /* background-size: cover; */
     overflow-y: fixed;
+}
+
+@media only screen and (max-width: 450px)
+{
+    h1 { padding-top: 40px; padding-bottom: 20px; }
+    .donate_form {display: none;}
+    .donate_button {display: block;}
+    .band {
+        background-position: center top, center top;
+        background-color: #42588a;
+        background-size: auto 150px, auto;
+    }
+    div.intro { min-height: 80vh;}
+    div.links { min-height: 10vh;}
+    .parallax { min-height: 120vh;}
 }
