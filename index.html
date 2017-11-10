@@ -72,15 +72,8 @@
               <p class="thanks">Евгении за редактуру и ценные замечания по стилю.</p>
               <p class="thanks">Дорогой Анне за ежедневную поддержку.</p>
               <br><p class="thanks">Вы также можете поддержать проект материально — это позволит посвящать больше времени его развитию.</p>
-              <div class="donate_form">
-                  <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001169407132&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B+%D0%98%D0%B2%D1%8B+%D1%80%D0%BE%D1%81%D0%BB%D0%B8+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=04&comment=on&hint=&successURL=" width="450" height="275"></iframe>
-              </div>
-              <div class="donate_button">
-                  <p>При помощи Яндекс.Денег</p>
-                  <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&yamoney-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-                  <p>При помощи банковской карты</p>
-                  <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-              </div>
+              <div id="donate-form" class="donate_form"></div>
+<div id="donate-buttons" class="donate_button"></div>
 <br>
               <br><p class="thanks">Спасибо также всем, кто внес свои замечания и предложения по предварительной версии этого проекта.</p>
 
@@ -90,6 +83,65 @@
            </div>
        </div>
     </div>
+    <!-- Donate Forms Selective Loader -->
+    <script>
+        function createDonateIframe()
+        {
+          var donate_frame = document.createElement("iframe");
+          donate_frame.src = "https://money.yandex.ru/quickpay/shop-widget?account=41001169407132&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B+%D0%98%D0%B2%D1%8B+%D1%80%D0%BE%D1%81%D0%BB%D0%B8+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=04&comment=on&hint=&successURL=";
+          donate_frame.scrolling = "no";
+          donate_frame.frameBorder = "0";
+          donate_frame.width = "450x";
+          donate_frame.height = "275px";
+          donate_frame.allowTransparency="true";
+          document.getElementById("donate-form").appendChild(donate_frame);
+        };
+        
+        function createDonateButtons()
+        {
+            var donate_button_ya = document.createElement("iframe");
+            donate_button_ya.src = "https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&yamoney-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&";
+            donate_button_ya.scrolling = "no";
+            donate_button_ya.frameBorder = "0";
+            donate_button_ya.width = "184px";
+            donate_button_ya.height = "36px";
+            donate_button_ya.allowTransparency="true";
+            
+            var donate_button_card= document.createElement("iframe");
+            donate_button_card.src = "https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&";
+            donate_button_card.scrolling = "no";
+            donate_button_card.frameBorder = "0";
+            donate_button_card.width = "184px";
+            donate_button_card.height = "36px";
+            donate_button_card.allowTransparency="true";
+            
+            var intro_ya = document.createElement("p");
+            var intro_ya_text = document.createTextNode("При помощи Яндекс.Денег");
+            intro_ya.appendChild(intro_ya_text);
+            
+            var intro_card = document.createElement("p");
+            var intro_card_text = document.createTextNode("При помощи банковской карты");
+            intro_card.appendChild(intro_card_text);
+            
+            document.getElementById("donate-buttons").appendChild(intro_ya);
+            document.getElementById("donate-buttons").appendChild(donate_button_ya);
+            document.getElementById("donate-buttons").appendChild(intro_card);
+            document.getElementById("donate-buttons").appendChild(donate_button_card);
+        }
+        
+        if (screen.width > 450)
+            if (window.addEventListener)
+                window.addEventListener("load", createDonateIframe, false);
+            else if (window.attachEvent)
+                window.attachEvent("onload", createDonateIframe);
+            else window.onload = createDonateIframe;
+        else 
+            if (window.addEventListener)
+                window.addEventListener("load", createDonateButtons, false);
+            else if (window.attachEvent)
+                window.attachEvent("onload", createDonateButtons);
+            else window.onload = createDonateButtons;
+        </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
