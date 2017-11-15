@@ -27,15 +27,15 @@ a:hover { text-decoration: underline; }
     background-repeat: no-repeat, no-repeat;
     background-position: center 21em, center top;
     background-color: #42588a;
-    background-size: 180px auto, auto;
+    background-size: 150px auto, auto;
 }
 
 .menu {
-    background-image: url("../img/willows_back.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 21em, center top;
     background-color: #42588a;
-    background-size: auto;
+    background-size: 150px auto, auto;
     position: relative;
     width: 100%;
     min-height: 10vh;
@@ -60,11 +60,11 @@ a:hover { text-decoration: underline; }
     .donate_form {display: none;}
     .donate_button {display: block;}
     .band {
-        background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
-        background-repeat: no-repeat, no-repeat;
         background-position: center top, center top;
-        background-color: #42588a;
         background-size: auto 150px, auto;
+    }
+    .menu {
+        background-position: center top, center top;
     }
 }
 
