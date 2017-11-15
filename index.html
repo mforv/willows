@@ -8,9 +8,10 @@
     <meta name="description" content="Истории о войне, одиночестве, предназначении, долге и иных, более приземленных вещах."/>
 
     <meta name="theme-color" content="#42588a" />
-    <link type="text/css" rel="stylesheet" href="css/skeleton.css">
+    <link type="text/css" rel="stylesheet" href="css/skeleton.min.css">
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon.png"/>
 
     <meta property="og:type" content="website"/>
@@ -42,107 +43,32 @@
     </script>
 </head>
 <body>
-    <header class="parallax band">
+    <header class="face band">
         <div class="container">
             <div class="columns twelve">
                 <h1>Январские ивы</h1>
                 <p class="lead">Истории о войне, одиночестве, предназначении, долге и иных, более приземленных вещах.</p>
-                <p class="lead"><a href="#stories">Добро пожаловать.</a></p>
+            </div>
+            <div class="row">
+                <div class="columns four">
+                    <h2 class="mar"><a href="./stories">ИСТОРИИ</a></h2>
+                </div>
+                <div class="columns four">
+                    <h2 class="mac"><a href="./heiti">ИМЕНА</a></h2>
+                </div>
+                <div class="columns four">
+                    <h2 class="mal"><a href="./project">ПРОЕКТ</a></h2>
+                </div>
             </div>
         </div>
     </header>
-    <div class="parallax main">
-       <div class="container">
-           <div class = "twelve columns">
-              <h2 id="stories">Истории</h2>
-              <h3><a href="stories/truth.html" target="_blank">Правда — зверь с печальным ликом</a></h3>
-              <h3><a href="stories/dialogues-1.html" target="_blank">Диалоги: сестра, брат, сестра</a></h3>
-              <h3><a href="stories/en-eriks-dag.html" target="_blank">Один день Эрика Густафссона</a></h3>
-              <h3><a href="stories/lady-sorrow-welcomes.html" target="_blank">Вечер у леди Скорбь</a></h3>
-              <h3><a href="stories/dialogues-2.html" target="_blank">Диалоги: мастер и координаторы</a></h3>
-              <h3><a href="stories/to-sister.html" target="_blank">Сестре</a></h3>
-              <h3><a href="stories/an-unsent-letter.html" target="_blank">Неотправленное письмо, найденное в пустом доме</a></h3>
-              <h3><a href="stories/skaragoss.html" target="_blank">Звери острова Скарагосс</a></h3>
-
-              <h2>Благодарности</h2>
-              <p class="thanks">Наталье Андреевне за вдохновение и прекрасную музыку.</p>
-              <p class="thanks"><a href="https://t.me/sanya_pishet" target="_blank">Саше</a> за <a href="https://medium.com/@sanyaguseva" target="_blank">чудесные стихи</a>, которыми говорит Дина.</p>
-              <p class="thanks"><a href="https://twitter.com/TriumInt" target="_blank">Егору</a> за мудрые научно-технические советы.</p>
-              <p class="thanks"><a href="https://t.me/writeme" target="_blank">Кириллу</a> за мудрые советы по дизайну и оформлению.</p>
-              <p class="thanks"><a href="https://vk.com/allina_saga" target="_blank">Алине</a> за завораживающие фотографии.</p>
-              <p class="thanks">Евгении за редактуру и ценные замечания по стилю.</p>
-              <p class="thanks">Дорогой Анне за ежедневную поддержку.</p>
-              <br><p class="thanks">Вы также можете поддержать проект материально — это позволит посвящать больше времени его развитию.</p>
-              <div id="donate-form" class="donate_form"></div>
-<div id="donate-buttons" class="donate_button"></div>
-<br>
-              <br><p class="thanks">Спасибо также всем, кто внес свои замечания и предложения по предварительной версии этого проекта.</p>
-
-              <br><h4>Лента обновлений и дополнительный контент на <a href="https://t.me/winter_willows" target="_blank">канале в Telegram.</a></h4>
-
-              <br><h4>Для лиц старше 18 лет. <br><a href="https://mforv.github.io/" target="_blank">mforv</a>, 2017.</h4>
-           </div>
-       </div>
+    <div class="menu">
+        <div class="container">
+            <div class="columns twelve">
+                <p class="lead"><a href="https://t.me/winter_willows" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
     </div>
-    <!-- Donate Forms Selective Loader -->
-    <script>
-        function createDonateIframe()
-        {
-          var donate_frame = document.createElement("iframe");
-          donate_frame.src = "https://money.yandex.ru/quickpay/shop-widget?account=41001169407132&quickpay=shop&payment-type-choice=on&writer=seller&targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B+%D0%98%D0%B2%D1%8B+%D1%80%D0%BE%D1%81%D0%BB%D0%B8+%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=04&comment=on&hint=&successURL=";
-          donate_frame.scrolling = "no";
-          donate_frame.frameBorder = "0";
-          donate_frame.width = "450x";
-          donate_frame.height = "275px";
-          donate_frame.allowTransparency="true";
-          document.getElementById("donate-form").appendChild(donate_frame);
-        };
-        
-        function createDonateButtons()
-        {
-            var donate_button_ya = document.createElement("iframe");
-            donate_button_ya.src = "https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&yamoney-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&";
-            donate_button_ya.scrolling = "no";
-            donate_button_ya.frameBorder = "0";
-            donate_button_ya.width = "184px";
-            donate_button_ya.height = "36px";
-            donate_button_ya.allowTransparency="true";
-            
-            var donate_button_card= document.createElement("iframe");
-            donate_button_card.src = "https://money.yandex.ru/quickpay/button-widget?targets=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%98%D0%B2%D1%8B%20%D1%80%D0%BE%D1%81%D0%BB%D0%B8%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B5&default-sum=100&button-text=13&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001169407132&";
-            donate_button_card.scrolling = "no";
-            donate_button_card.frameBorder = "0";
-            donate_button_card.width = "184px";
-            donate_button_card.height = "36px";
-            donate_button_card.allowTransparency="true";
-            
-            var intro_ya = document.createElement("p");
-            var intro_ya_text = document.createTextNode("При помощи Яндекс.Денег");
-            intro_ya.appendChild(intro_ya_text);
-            
-            var intro_card = document.createElement("p");
-            var intro_card_text = document.createTextNode("При помощи банковской карты");
-            intro_card.appendChild(intro_card_text);
-            
-            document.getElementById("donate-buttons").appendChild(intro_ya);
-            document.getElementById("donate-buttons").appendChild(donate_button_ya);
-            document.getElementById("donate-buttons").appendChild(intro_card);
-            document.getElementById("donate-buttons").appendChild(donate_button_card);
-        }
-        
-        if (screen.width > 450)
-            if (window.addEventListener)
-                window.addEventListener("load", createDonateIframe, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", createDonateIframe);
-            else window.onload = createDonateIframe;
-        else 
-            if (window.addEventListener)
-                window.addEventListener("load", createDonateButtons, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", createDonateButtons);
-            else window.onload = createDonateButtons;
-        </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
