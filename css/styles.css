@@ -45,10 +45,14 @@ a:hover { text-decoration: underline; }
     h2.mar { margin-top: 5px; margin-bottom: 5px; text-align: center; }
     h2.mal { margin-top: 5px; margin-bottom: 5px; text-align: center; }
     h2.me { margin-top: 5px; margin-bottom: 5px; text-align: left; }
+    p  { text-align: left; }
+    
     .nav { margin-left: 0px; margin-right: 0px;}
-    .nav2 { margin-left: 0px; margin-right: 0px;}    
+    .nav2 { margin-left: 0px; margin-right: 0px;}
+
     .donate_form {display: none;}
     .donate_button {display: block;}
+    
     .band {
         background-position: center top, center top;
         background-size: auto 150px, auto;
