@@ -16,6 +16,7 @@ p.lead  { color: #1c2436; font-size: 30px; line-height: 1.1em; text-align: cente
 p.poetry { text-align: center; font-style: italic; line-height: 0.75em;}
 p.date { font-size: 24px; text-align: right; font-style: italic; line-height: 1.0em;}
 p.bottom { font-size: 20px; text-align: center; margin-bottom: 0.5em;}
+p.nav { font-size: 34px; text-align: center; margin-bottom: 0.25em;}
 p.left {text-align: left;}
 p.story { font-size: 20px; line-height: 1.0em; margin-bottom: 0.66em;}
 hr { margin-top: 5px; margin-bottom: 5px;}
