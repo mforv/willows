@@ -66,7 +66,7 @@
     <div class="content main">
        <div class="container">
            <div class = "twelve columns">
-              <h2>Имена</h2>
+              <h2 id="heiti_up">Имена</h2>
             </div>
             <div class="row">
                 <div class = "four columns">
@@ -328,11 +328,33 @@
         var char_tab = 'Герои историй';
         var heiti_tab = 'Изреченные Имена';
         var nameless_tab = 'Безымянные';
+        var scroll_pos = 0;
+
+        function ChangeUrl(title, url)
+        {
+            var obj = { Title: title, Url: url };
+            if (history.pushState)
+            {
+                history.pushState(obj, obj.Title, obj.Url);
+            } 
+            else 
+            {
+                document.location.href = obj.Url.toString();
+            }
+        }
+
+        $(window).scroll(function()
+        {
+            scroll_pos = $(window).scrollTop();
+            console.info(scroll_pos);
+        }
+        );
+
         $('load', function()
         {
             $('#link_chars').html(char_tab);
-            $('#link_heiti').html('<a href="#">'+ heiti_tab +'</a>');
-            $('#link_nameless').html('<a href="#">' + nameless_tab + '</a>');
+            $('#link_heiti').html('<a href="talað_heiti">'+ heiti_tab +'</a>');
+            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
             $('#characters').show();
             $('#heiti').hide();
             $('#nameless').hide();
@@ -340,32 +362,41 @@
 
         $('#link_chars').on('click', function()
         {
+            event.preventDefault();
             $('#link_chars').html(char_tab);
-            $('#link_heiti').html('<a href="#">'+ heiti_tab +'</a>');
-            $('#link_nameless').html('<a href="#">' + nameless_tab + '</a>');
+            $('#link_heiti').html('<a href="talað_heiti">'+ heiti_tab +'</a>');
+            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
             $('#characters').fadeIn(600);
             $('#heiti').hide();
             $('#nameless').hide();
+            window.scroll(0, scroll_pos);
+            ChangeUrl("Январские ивы — Имена", "characters");
         });
 
         $('#link_heiti').on('click', function()
         {
-            $('#link_chars').html('<a href="#">' + char_tab + '</a>');
+            event.preventDefault();
+            $('#link_chars').html('<a href="characters">' + char_tab + '</a>');
             $('#link_heiti').html(heiti_tab);
-            $('#link_nameless').html('<a href="#">' + nameless_tab + '</a>');
+            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
             $('#characters').hide();
             $('#heiti').fadeIn(600);
             $('#nameless').hide();
+            window.scroll(0, scroll_pos);
+            ChangeUrl("Январские ивы — Имена", "talað_heiti");
         });
 
         $('#link_nameless').on('click', function()
         {
-            $('#link_chars').html('<a href="#">' + char_tab + '</a>');
-            $('#link_heiti').html('<a href="#">' + heiti_tab + '</a>');
+            event.preventDefault();
+            $('#link_chars').html('<a href="characters">' + char_tab + '</a>');
+            $('#link_heiti').html('<a href="talað_heiti">' + heiti_tab + '</a>');
             $('#link_nameless').html(nameless_tab);
             $('#characters').hide();
             $('#heiti').hide();
             $('#nameless').fadeIn(600);
+            window.scroll(0, scroll_pos);
+            ChangeUrl("Январские ивы — Имена", "nameless_ones");
         });
 
     </script>
