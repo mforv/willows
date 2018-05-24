@@ -66,7 +66,12 @@
     <div class="content main">
        <div class="container">
            <div class = "twelve columns">
-              <h2 id="heiti_up">Имена</h2>
+                <h2>Имена</h2>
+            </div>
+            <div class="row">
+                <div class = "twelve columns">
+                    <p class="kringla"><a href="./heitakringla" target="_blank">Круг Имен</a> — мир, определенный именами и определивший героев.</p>
+                </div>
             </div>
             <div class="row">
                 <div class = "four columns">
@@ -325,78 +330,57 @@
     <!-- /Yandex.Metrika counter -->
     <!-- Tabs Scripts -->
     <script>
-        var char_tab = 'Герои историй';
-        var heiti_tab = 'Изреченные Имена';
-        var nameless_tab = 'Безымянные';
+        var tab_elements = ['#link_chars', '#link_heiti', '#link_nameless'];
+        var tabs = ['Герои историй', 'Изреченные Имена', 'Безымянные'];
+        var content_elements = ['#characters', '#heiti', '#nameless'];
         var scroll_pos = 0;
 
-        function ChangeUrl(title, url)
-        {
-            var obj = { Title: title, Url: url };
-            if (history.pushState)
-            {
-                history.pushState(obj, obj.Title, obj.Url);
-            } 
-            else 
-            {
-                document.location.href = obj.Url.toString();
-            }
-        }
-
-        $(window).scroll(function()
-        {
-            scroll_pos = $(window).scrollTop();
-            console.info(scroll_pos);
-        }
-        );
+        $(window).scroll(function() { scroll_pos = $(window).scrollTop(); });
 
         $('load', function()
         {
-            $('#link_chars').html(char_tab);
-            $('#link_heiti').html('<a href="talað_heiti">'+ heiti_tab +'</a>');
-            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
-            $('#characters').show();
-            $('#heiti').hide();
-            $('#nameless').hide();
+            $(tab_elements[0]).html(tabs[0]);
+            $(tab_elements[1]).html('<a href="">'+ tabs[1] +'</a>');
+            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
+            $(content_elements[0]).show();
+            $(content_elements[1]).hide();
+            $(content_elements[2]).hide();
         });
 
-        $('#link_chars').on('click', function()
+        $(tab_elements[0]).on('click', function()
         {
             event.preventDefault();
-            $('#link_chars').html(char_tab);
-            $('#link_heiti').html('<a href="talað_heiti">'+ heiti_tab +'</a>');
-            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
-            $('#characters').fadeIn(600);
-            $('#heiti').hide();
-            $('#nameless').hide();
+            $(tab_elements[0]).html(tabs[0]);
+            $(tab_elements[1]).html('<a href="">'+ tabs[1] +'</a>');
+            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
+            $(content_elements[0]).fadeIn(600);
+            $(content_elements[1]).hide();
+            $(content_elements[2]).hide();
             window.scroll(0, scroll_pos);
-            ChangeUrl("Январские ивы — Имена", "characters");
         });
 
-        $('#link_heiti').on('click', function()
+        $(tab_elements[1]).on('click', function()
         {
             event.preventDefault();
-            $('#link_chars').html('<a href="characters">' + char_tab + '</a>');
-            $('#link_heiti').html(heiti_tab);
-            $('#link_nameless').html('<a href="nameless_ones">' + nameless_tab + '</a>');
-            $('#characters').hide();
-            $('#heiti').fadeIn(600);
-            $('#nameless').hide();
+            $(tab_elements[0]).html('<a href="">' + tabs[0] + '</a>');
+            $(tab_elements[1]).html(tabs[1]);
+            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
+            $(content_elements[0]).hide();
+            $(content_elements[1]).fadeIn(600);
+            $(content_elements[2]).hide();
             window.scroll(0, scroll_pos);
-            ChangeUrl("Январские ивы — Имена", "talað_heiti");
         });
 
-        $('#link_nameless').on('click', function()
+        $(tab_elements[2]).on('click', function()
         {
             event.preventDefault();
-            $('#link_chars').html('<a href="characters">' + char_tab + '</a>');
-            $('#link_heiti').html('<a href="talað_heiti">' + heiti_tab + '</a>');
-            $('#link_nameless').html(nameless_tab);
-            $('#characters').hide();
-            $('#heiti').hide();
-            $('#nameless').fadeIn(600);
+            $(tab_elements[0]).html('<a href="characters">' + tabs[0] + '</a>');
+            $(tab_elements[1]).html('<a href="talað_heiti">' + tabs[1] + '</a>');
+            $(tab_elements[2]).html(tabs[2]);
+            $(content_elements[0]).hide();
+            $(content_elements[1]).hide();
+            $(content_elements[2]).fadeIn(600);
             window.scroll(0, scroll_pos);
-            ChangeUrl("Январские ивы — Имена", "nameless_ones");
         });
 
     </script>
