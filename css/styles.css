@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body { font-family: 'EB Garamond', serif; color: #111; margin-top: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
 
-h1 { font-family: 'EB Garamond', serif; font-size: 56px; margin-top: 20px; margin-bottom: 20px;  text-align: center; color: #1c2436; padding-top: 40px; padding-bottom: 40px; }
-h2 { font-family: 'EB Garamond', serif; font-size: 42px; margin-top: 20px; margin-bottom: 20px;  color: #111; padding-top: 0 }
-h2.mac { font-family: 'EB Garamond', serif; font-size: 28px; margin-top: 5px; margin-bottom: 20px;  text-align: center; color: #1c2436; padding-top: 0 }
-h2.mal { font-family: 'EB Garamond', serif; font-size: 28px; margin-top: 5px; margin-bottom: 20px;  text-align: left; color: #1c2436; padding-top: 0 }
-h2.mar { font-family: 'EB Garamond', serif; font-size: 28px; margin-top: 5px; margin-bottom: 20px;  text-align: right; color: #1c2436; padding-top: 0 }
-h2.me { font-family: 'EB Garamond', serif; font-size: 24px; margin-top: 36px; margin-bottom: 20px;  text-align: center; color: #111; padding-top: 0 }
-h3 { font-family: 'EB Garamond', serif; font-size: 28px; margin-top: 15px; margin-bottom: 15px;  color: #111; padding-top: 0 }
-h4 { font-family: 'EB Garamond', serif; font-size: 26px; margin-top: 0px; margin-bottom: 0px;  color: #111; padding-top: 0 }
+h1 { font-size: 56px; margin-top: 20px; margin-bottom: 20px; text-align: center; color: #1c2436; padding-top: 40px; padding-bottom: 40px; }
+h2 { font-size: 42px; margin-top: 20px; margin-bottom: 20px; color: #111; padding-top: 0; }
+h3 { font-size: 28px; margin-top: 0px; margin-bottom: 15px;  color: #111; padding-top: 0; }
+h4 { font-size: 26px; margin-top: 0px; margin-bottom: 0px;  color: #111; padding-top: 0; }
+
 p  { font-size: 22px; line-height: 1.1em; text-align: justify; margin-top: 0; margin-bottom: 1.0em;}
 p.lead  { color: #1c2436; font-size: 30px; line-height: 1.1em; text-align: center; margin-top: 0; margin-bottom: 1.1em;}
 p.poetry { text-align: center; font-style: italic; line-height: 0.75em;}
@@ -25,35 +21,39 @@ a:link, a:visited  { color: #4b639b; text-decoration: none;}
 a:hover { text-decoration: underline; }
 
 .band {
-    background-image: url("../img/willows_logo.png"), url("../img/willows_back.jpg");
+    background-image: url("../assets/willows_logo.png"), url("../assets/willows_back.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center 21em, center top;
     background-color: #42588a;
     background-size: 18vh auto, auto;
 }
 
+.nav { font-size: 24px; margin-top: 10px; margin-bottom: 10px; text-align: left; color: #111; }
+.nav-inner { font-size: 28px; margin-top: 0px; margin-bottom: 5px; text-align: left; color: #111; }
+.main-block { font-size: 30px; text-align: center;}
+
+@media (min-width: 550px) {
+    .nav-item { margin-right: 30px; float: left; }
+    .nav-inner { margin-right: 30px; float: left; }
+    .nav-social { margin-top: 12px; float: right; }
+    .nav-title { margin-right: 30px; float: left; margin-bottom: 0; margin-top: 5px; }
+    .main-item { display: inline;}
+    .main-span { display: inline; font-size: 28px; color: #1c2436; }
+    span { margin-right: 15px; margin-left: 15px; }
+}
 
 
-.nav { margin-left: 5px; margin-right: 5px;}
-.nav2 { margin-left: 5px; margin-right: 15px;}
-
-
-.donate_form {display: block;}
-.donate_button {display: none;}
-@media only screen and (max-width: 450px)
+@media (max-width: 550px)
 {
-    h1 { padding-bottom: 20px; }
-    h2.mac { margin-top: 5px; margin-bottom: 5px; }
-    h2.mar { margin-top: 5px; margin-bottom: 5px; text-align: center; }
-    h2.mal { margin-top: 5px; margin-bottom: 5px; text-align: center; }
-    h2.me { margin-top: 5px; margin-bottom: 5px; text-align: left; }
-    p  { text-align: left; }
+    .nav { margin-top: 0px; margin-bottom: 12px; text-align: center; line-height: 1; }
+    .main-block { font-size: 28px; }
+    .nav-title { padding-top: 10px; }
+    .main-item { display: block; }
+    .main-span { display: none; }
+    span { margin-right: 5px; margin-left: 0px; }
     
-    .nav { margin-left: 0px; margin-right: 0px;}
-    .nav2 { margin-left: 0px; margin-right: 0px;}
-
-    .donate_form {display: none;}
-    .donate_button {display: block;}
+    h1 { padding-bottom: 20px; }
+    p { text-align: left; }
     
     .band {
         background-position: center top, center top;
@@ -77,11 +77,10 @@ a:hover { text-decoration: underline; }
 }
 
 .menu {
-    background-image: url("../img/willows_back.jpg");
+    background-image: url("../assets/willows_back.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
-    min-height: 10vh;
 }
 
 .parallax {
@@ -95,3 +94,37 @@ a:hover { text-decoration: underline; }
 .footer {
     min-height: 15vh;
 }
+
+.night-mode body {
+    /* background-color: #131926; */
+    color: #c8c8c8;
+    background-color: #272727;
+    /* color: #ffffff; */
+}
+
+.night-mode h2 {
+    /* color: #c8c8c8; */
+    color: #e5e5e5;
+}
+
+.night-mode p {
+    /* color: #c8c8c8; */
+    color: #e5e5e5;
+}
+
+.night-mode a {
+    /* color: #c8c8c8; */
+    color: #e5e5e5;
+}
+
+.menu.night-mode {
+    /* background: #131926; */
+    background: #202020
+}
+
+.night-mode img {
+    filter: white; /* IE6-9 */
+    -webkit-filter: brightness(0) invert(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: brightness(0) invert(1); /* Microsoft Edge and Firefox 35+ */
+}
+

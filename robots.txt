@@ -5,8 +5,7 @@ Allow: /img/
 User-Agent: *
 Disallow: /css/
 Disallow: /img/
-Disallow: /less/
-Disallow: /scss/
-Disallow: /fonts/
+Disallow: /assets/
+Disallow: /js/
 
 Host: https://willows.is/

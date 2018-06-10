@@ -11,7 +11,6 @@
     <link type="text/css" rel="stylesheet" href="../css/skeleton.min.css">
     <link type="text/css" rel="stylesheet" href="../css/normalize.css">
     <link type="text/css" rel="stylesheet" href="../css/styles.css">
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="../favicon.png"/>
 
     <meta property="og:type" content="website"/>
@@ -40,8 +39,29 @@
         
         gtag('config', 'UA-38992446-3');
     </script>
-</head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script></head>
 <body>
+    <div class="menu">
+        <div class="container">
+                <div class="nav nav-title">
+                    <a href="https://willows.is"><img src="../assets/title.png" width="48px" title="Январские ивы"></a>
+                </div>
+                <div class="nav nav-item">
+                    <a href="../stories">Истории</a><span></span>
+                    <a href="../heitakringla">Мир</a>
+                </div>
+                <div class="nav nav-item">
+                    <a href="../heiti">Имена</a><span></span>
+                    <a href="../project">Проект</a>
+                </div>
+                <div class="nav nav-social">
+                    <a href="" id="night-mode"><i class="far fa-moon" title="Включить ночной режим"></i></a><span></span>
+                    <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>&thinsp;
+                    <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>&thinsp;
+                    <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
+                </div>
+        </div>
+    </div>
     <div class="container">
         <div class = "twelve columns">
           <h2>Диалоги: мастер и координаторы</h2>
@@ -79,17 +99,12 @@
                 <div class="row">
                     <div class = "twelve columns">
                         <hr>
-                        <p class="nav"><a href="https://willows.is/stories/truth"><i class="fa fa-angle-double-left" aria-hidden="true" title="Самая первая история"></i></a>&emsp;<a href="https://willows.is/stories/lady-sorrow-welcomes"><i class="fa fa-angle-left" aria-hidden="true" title="Предыдущая история"></i></a>&emsp;5&emsp;<a href="https://willows.is/stories/to-sister"><i class="fa fa-angle-right" aria-hidden="true" title="Следующая история"></i></a>&emsp;<a href="https://willows.is/stories/nightfall-in-heitakringla-2"><i class="fa fa-angle-double-right" aria-hidden="true" title="Самая новая история"></i></a></p>
+                        <p class="nav"><a href="https://willows.is/stories/truth"><i class="fa fa-angle-double-left" aria-hidden="true" title="Самая первая история: «Правда — зверь с печальным ликом»"></i></a>&emsp;<a href="https://willows.is/stories/lady-sorrow-welcomes"><i class="fa fa-angle-left" aria-hidden="true" title="Предыдущая история: «Вечер у леди Скорбь»"></i></a>&emsp;5&emsp;<a href="https://willows.is/stories/to-sister"><i class="fa fa-angle-right" aria-hidden="true" title="Следующая история: «Сестре»"></i></a>&emsp;<a href="https://willows.is/stories/nightfall-in-heitakringla-2"><i class="fa fa-angle-double-right" aria-hidden="true" title="Самая новая история: «Сумерки светоносных, часть 2»"></i></a></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class = "twelve columns">
-                        <p class="bottom"><a href="https://willows.is/stories">ИСТОРИИ</a>&emsp;<a href="https://willows.is/heiti">ИМЕНА</a>&emsp;<a href="https://willows.is/project">ПРОЕКТ</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "twelve columns">
-                        <p class="bottom"><a href="https://t.me/winter_willows" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i>&nbsp;Telegram</a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>&nbsp;VK</a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitter</a></p>
+                        <p class="bottom"><a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></p>
                     </div>
                 </div>
                 <div class="row">
@@ -99,7 +114,7 @@
                 </div>
                 <div class="row">
                         <div class = "twelve columns">
-                            <p class="bottom"><img src="https://willows.is/img/willows_logo.png" height="53px"></p>
+                            <p class="bottom"><img src="../assets/willows_logo.png" height="53px"></p>
                         </div>
                 </div>
             </div>
@@ -131,5 +146,36 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/41885434" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">
+        var night_mode = 0;
+        
+        function mode_upd()
+        {
+            if (night_mode) {
+                document.documentElement.classList.add('night-mode');
+                document.getElementsByClassName("menu")[0].classList.add('night-mode');
+                document.getElementById('night-mode').innerHTML = '<i class="fas fa-moon" title="Выключить ночной режим"></i>';
+            }
+            else {
+                document.documentElement.classList.remove('night-mode');
+                document.getElementsByClassName("menu")[0].classList.remove('night-mode');
+                document.getElementById('night-mode').innerHTML = '<i class="far fa-moon" title="Включить ночной режим"></i>';
+            }
+        }
+        
+        $('load', function()
+        {
+            if (localStorage.getItem('wwNightMode')) { night_mode = Number(localStorage.getItem('wwNightMode')); }
+            mode_upd();
+        });
+        
+        $('#night-mode').on('click', function(event)
+        {
+            event.preventDefault();
+            if (night_mode) { night_mode = 0; } else { night_mode = 1; }
+            mode_upd();
+            localStorage.setItem("wwNightMode", night_mode);
+        });
+    </script>
 </body>
 </html>
