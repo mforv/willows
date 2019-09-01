@@ -1,130 +1,379 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600');
 
-body { font-family: 'EB Garamond', serif; color: #111; margin-top: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+body { font-family: 'EB Garamond', serif; color: #111; margin: 0; }
 
-h1 { font-size: 56px; margin-top: 20px; margin-bottom: 20px; text-align: center; color: #1c2436; padding-top: 40px; padding-bottom: 40px; }
-h2 { font-size: 42px; margin-top: 20px; margin-bottom: 20px; color: #111; padding-top: 0; }
-h3 { font-size: 28px; margin-top: 0px; margin-bottom: 15px;  color: #111; padding-top: 0; }
-h4 { font-size: 26px; margin-top: 0px; margin-bottom: 0px;  color: #111; padding-top: 0; }
-
-p  { font-size: 22px; line-height: 1.1em; text-align: justify; margin-top: 0; margin-bottom: 1.0em;}
-p.lead  { color: #1c2436; font-size: 30px; line-height: 1.1em; text-align: center; margin-top: 0; margin-bottom: 1.1em;}
-p.poetry { text-align: center; font-style: italic; line-height: 0.75em;}
-p.date { font-size: 24px; text-align: right; font-style: italic; line-height: 1.0em;}
-p.bottom { font-size: 20px; text-align: center; margin-bottom: 0.5em;}
-p.nav { font-size: 34px; text-align: center; margin-bottom: 0.25em;}
-p.left {text-align: left;}
-p.story { font-size: 20px; line-height: 1.0em; margin-bottom: 0.66em;}
-hr { margin-top: 5px; margin-bottom: 5px;}
-
-a:link, a:visited  { color: #4b639b; text-decoration: none;}
-a:hover { text-decoration: underline; }
+hr { 
+    border-width: 0;
+    border-top: 1px solid #E1E1E1; 
+    margin: 5px 0;
+    width: 100%;
+}
 
 .band {
-    background-image: url("../assets/willows_logo.png"), url("../assets/willows_back.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center 21em, center top;
-    background-color: #42588a;
-    background-size: 18vh auto, auto;
-}
-
-.nav { font-size: 24px; margin-top: 10px; margin-bottom: 10px; text-align: left; color: #111; }
-.nav-inner { font-size: 28px; margin-top: 0px; margin-bottom: 5px; text-align: left; color: #111; }
-.main-block { font-size: 30px; text-align: center;}
-
-@media (min-width: 550px) {
-    .nav-item { margin-right: 30px; float: left; }
-    .nav-inner { margin-right: 30px; float: left; }
-    .nav-social { margin-top: 12px; float: right; }
-    .nav-title { margin-right: 30px; float: left; margin-bottom: 0; margin-top: 5px; }
-    .main-item { display: inline;}
-    .main-span { display: inline; font-size: 28px; color: #1c2436; }
-    span { margin-right: 12.5px; margin-left: 12.5px; }
-}
-
-
-@media (max-width: 550px)
-{
-    .nav { margin-top: 0px; margin-bottom: 12px; text-align: center; line-height: 1; }
-    .main-block { font-size: 28px; }
-    .nav-title { padding-top: 10px; }
-    .main-item { display: block; }
-    .main-span { display: none; }
-    span { margin-right: 5px; margin-left: 0px; }
-    
-    h1 { padding-bottom: 20px; }
-    p { text-align: left; }
-    
-    .band {
-        background-position: center top, center top;
-        background-size: auto 150px, auto;
-    }
-}
-
-.main {
-    background: #FFF no-repeat;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-    min-height: 75vh;
-    background-attachment: fixed;
-}
-
-.face {
-    min-height: 90vh;
-}
-
-.menu {
     background-image: url("../assets/willows_back.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+    background-color: #42588a;
     background-size: auto;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
-.parallax {
+.container {
+    display: grid;
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-attachment: fixed;
-    /* background-size: cover; */
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 24px;
+    /* grid-template-rows: 66px auto; */
+    /* min-height: 100vh; */
 }
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em 1em 0;
+}
+
+.nav-social {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    background: url("../assets/title.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    flex-basis: 2.5em;
+    height: 2.5em;
+    /* margin: 0.25em 0; */
+}
+
+.nav-menu {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+}
+
+.nav-item {
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.nav-night-mode {
+    margin-right: 1em;
+}
+
+.nav-social-item {
+    margin-left: 0.25em;
+}
+
+.nav-menu.on {
+    display: flex;
+}
+
+.story {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+}
+
+.stories-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(var(--nr), max-content);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+}
+
+.story-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+.story-date {
+    font-size: 0.8em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.75em;
+    margin: 0 0 0.25em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 0.25em 0;
+}
+
+p {
+    text-align: justify; 
+    margin-top: 0; 
+    margin-bottom: 1.0em;
+}
+
+p.date { text-align: right; font-style: italic; }
+p.poetry { text-align: center; font-style: italic; line-height: 1em; }
 
 .footer {
-    min-height: 15vh;
+    display: grid;
+    margin: 0 auto;
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    font-size: 0.85em;
+    margin-top: 0.6em;
+}
+
+.footer-item {
+    display: flex;
+    margin: 0 0.4em;
+    line-height: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85em;
+    margin: 0.6em 0;
+}
+
+.willows-title {
+    font-size: 2.25em;
+    margin: 0;
+    /* margin-top: 1em; */
+    margin-bottom: 0.25em;
+    /* text-align: center; */
+    /* color: #1c2436; */
+    font-weight: 400;
+    letter-spacing: -.1rem;
+}
+
+.main-page {
+    display: grid;
+    grid-row-gap: 0.25em;
+    margin: 0.5em 0 0 0;
+}
+
+.highlight {
+    display: flex;
+}
+
+.start-item {
+    margin-right: 0.75em;
+}
+
+.cite {
+    font-style: italic;
+    text-align: justify;
+}
+
+.highlight-title {
+    font-size: 1.25em;
+    margin-right: 0.25em;
+}
+
+.highlight-comment {
+    font-size: 1.0em;
+}
+
+.display-books {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+
+.book-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1.2em;
+}
+
+.book-title {
+    font-size: 1.5em;
+}
+
+.book-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-cover {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0.5em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.info-grid {
+    display: grid;
+    grid-row-gap: 1em;
+    margin: 0.5em 0;
+}
+
+.info-item {
+    display: grid;
+}
+
+.info-title {
+    font-weight: 600;
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .nav-night-mode-mobile {
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        padding: 0 0.5em;
+    }
+    
+    .nav-bar {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.25em 0.5em 0;
+    }
+    .nav-menu {
+        display: none;
+        font-size: 1.25em;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-item {
+        margin: 0 0 0.5em 0;
+    }
+    .nav-social {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .nav-mobile {
+        font-size: 1.25em;
+        flex-basis: 1.25em;
+    }
+    .nav-night-mode {
+        display: none;
+    }
+    .nav-night-mode-mobile {
+        display: block;
+        font-size: 1.25em;
+        flex-basis: 1.25em;
+        text-align: right;
+    }
+    .nav-social-item {
+        margin: 0 0.25em;
+    }
+    
+    .story {
+        padding: 0.5em;
+        /* margin: 0.5em; */
+    }
+
+    .stories-list {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: initial;
+        grid-template-columns: 1fr;
+    }
+
+    p { text-align: left; }
+    
+    .willows-title {
+        text-align: center;
+    }
+    .cite {
+        text-align: left;
+    }
+    .highlight {
+        flex-direction: column;
+    }
+    .start-item {
+        margin: 0;
+    }
+    .display-books {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-item {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        margin-top: 0.5em;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+    }
+}
+
+a.no-text { width: 100%; height: 100%;}
+a:link, a:visited  { color: #4b639b; text-decoration: none;}
+a:hover { text-decoration: underline; }
+
+
+/* Night mode */
+
 .night-mode body {
-    /* background-color: #131926; */
     color: #c8c8c8;
     background-color: #272727;
-    /* color: #ffffff; */
 }
 
 .night-mode h2 {
-    /* color: #c8c8c8; */
     color: #e5e5e5;
 }
 
 .night-mode p {
-    /* color: #c8c8c8; */
     color: #e5e5e5;
 }
 
 .night-mode a {
-    /* color: #c8c8c8; */
-    color: #e5e5e5;
+    color: #8ba3db
 }
 
-.menu.night-mode {
-    /* background: #131926; */
+.band.night-mode {
     background: #202020
 }
 
-.night-mode img {
+.story.night-mode {
+    background: #272727
+}
+
+.night-mode.nav-title {
     filter: white; /* IE6-9 */
-    -webkit-filter: brightness(0) invert(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    filter: brightness(0) invert(1); /* Microsoft Edge and Firefox 35+ */
+    -webkit-filter: brightness(0) invert(0.75); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: brightness(0) invert(0.75); /* Microsoft Edge and Firefox 35+ */
 }
 

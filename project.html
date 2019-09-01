@@ -8,8 +8,6 @@
     <meta name="description" content="Скандинавский стимпанк о том, как важно называть вещи своими именами."/>
 
     <meta name="theme-color" content="#42588a" />
-    <link type="text/css" rel="stylesheet" href="./css/skeleton.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./favicon.png"/>
 
@@ -39,102 +37,120 @@
 
         gtag('config', 'UA-38992446-3');
     </script>
+
+    <script defer src="./js/willows.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="menu">
+    <div class="band">
         <div class="container">
-                <div class="nav nav-title">
-                    <a href="https://willows.is"><img src="./assets/title.png" width="48px" title="Январские ивы"></a>
+            <!-- Navigation bar -->
+            <div class="nav-bar">
+                <div class="nav-mobile">
+                    <a href="" id="toggle-menu"><i class="fas fa-bars" title="Меню"></i></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./stories">Истории</a><span></span>
-                    <a href="./books">Книги</a>
+                <div class="nav-title">
+                    <a href="https://willows.is" class="no-text" title="Январские ивы"></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./heitakringla">Мир</a><span></span>
-                    <a href="./heiti">Имена</a><span></span>
-                    <a href="./project">Проект</a>
+                <div class="nav-night-mode-mobile">
+                    <a href="" id="night-mode-mobile"><i class="far fa-moon" title="Включить ночной режим"></i></a>
                 </div>
-                <div class="nav nav-social">
-                    <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>&thinsp;
-                    <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>&thinsp;
-                    <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
-                </div>
-        </div>
-    </div>
-    <div class="content main">
-       <div class="container">
-           <div class="row">
-                <div class = "twelve columns">
-                    <h2>Форма</h2>
-                    <p>«Январские ивы» — сборник историй о том, какую роль в жизни человека играют имена и огромные летающие корабли. Постмодернистское произведение о мире, где постмодернисты победили на уровне законов бытия. Жанр всего этого можно условно назвать «скандинавский стимпанк».</p>
-                    <h2>Содержание</h2>
-                    <p>В <a href="./heitakringla" target="_blank">Круге Имен</a> война — нормальное состояние вещей, и в дождливом городе Людлине ученые местного Института сполна это чувствуют.</p>
-                    <p>Не являются нормальным состоянием вещей  загадочные нападения на светоносных, убеждены представители Бюро Координации Имен.</p>
-                    <p>И совсем ненормальным является то, из-за чего отшельник с далекого северного острова решает прервать свое добровольного изгнание.</p>
-                    <p>А раз все вокруг напрямую зависит от того, на чьей стороне то или иное Имя, всем им предстоит на себе проверить, насколько слово определяет этот мир и насколько этот мир определяет слово.</p>
-                    <h2>Автор</h2>
-                    <p>До сих пор (не) известен в определенных кругах как <a href="https://mforv.github.io">Форв</a>. Долго работаю в <a href="https://psu.ru">Пермском университете</a> компьютерным лингвистом (это когда тебе все равно, писать ли на языке программирования или на каком-нибудь естественном). Подпольно пишу художественные тексты. Написал за 4 года <a href="https://rumandmetaphors.blogspot.com/">роман</a>. Не издал за 4 года настолку. Потребляю чай в каких-то безумных количествах. Так себе шутник.</p>
-                    <h2>Мнения</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class = "six columns">
-                    <p class="left"><a href="https://t.me/bookngrill/423" target="_blank">Мнение Сергея</a>, автора канала <a href="https://t.me/bookngrill" target="_blank">«Книги жарь»</a>.</p>
-                    <p class="left"><a href="https://t.me/fantasyrus/507" target="_blank">Мнение Андрея</a>, автора канала <a href="https://t.me/fantasyrus" target="_blank">«Fantasy &amp; Sci-Fi»</a>.</p>
-                    <p class="left"><a href="https://t.me/sanya_pishet/416" target="_blank">Мнение Саши</a>, автора канала <a href="https://t.me/sanya_pishet" target="_blank">«вороны-москвички»</a>.</p>
-                </div>
-                <div class = "six columns">
-                    <p class="left"><a href="https://t.me/fantasy_sf/465" target="_blank">Рекомендация</a> канала <a href="https://t.me/fantasy_sf" target="_blank">«Фантастика»</a>.</p>
-                    <p class="left"><a href="http://yanafilar.ru/январские-ивы/" target="_blank">Большой обзор Яны</a>, автора канала <a href="https://t.me/litmentor" target="_blank">«Литературный ментор»</a> и паблика <a href="https://vk.com/yanafilar" target="_blank">«Ваш книжный бар»</a>.</p>
+                <div class="nav-menu">
+                    <div class="nav-item">
+                        <a href="./stories">Истории</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./books">Книги</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heitakringla">Мир</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heiti">Имена</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./project">Проект</a>
+                    </div>
+                    <div class="nav-social">
+                        <div class="nav-night-mode">
+                            <a href="" id="night-mode"><i class="far fa-moon" title="Включить ночной режим"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class = "twelve columns">
+            <!-- /Navigation bar -->
+
+            <div class="story">
+                <!-- Content -->
+                <div class="section-title">
+                    <h2>О «Январских ивах»</h2>
+                </div>
+                <hr>
+                <div>
+                    <p><em>Возможно ли осознать, что такое смерть, не называя ее? Понять суть войны, не дав ей имени? Мы постигаем этот мир через имена, поскольку не можем мыслить вне языков, язык и мышление неразделимы, и война — это не то, что она представляет собой на самом деле, а то, что несет в себе ее имя. Смерть — это в первую очередь образ в нашем сознании, образ, созданный всем, что вложено в это имя — «смерть». Весь наш мир формируют имена.</em></p>
+                    <p>В Круге Имен, разделенном надвое облачной Завесой, жизнью управляют Имена — живые воплощения тех или иных концептов бытия. Имена вечны, но не вечны их воплощения, и, когда приходит время, новое Имя занимает место старого.</p>
+                    <p>Имена изрекаются светоносными, теми, кто получил по странной прихоти небесной механики частицу истинного света — логос. Но светоносные, обретая логос, остаются людьми. Нередко людьми алчными, трусливыми, эгоистичными и жестокими. Поэтому в Круге Имен война — привычное состояние вещей.</p>
+                    <p>И в начале XX века, в разгар очередной войны мир полнится слухами, страхами и надеждами. На фоне этого разворачиваются семь историй — историй о людях, живущих в этом мире, и о людях, желающих этот мир изменить.</p>
+                </div>
+                <div class="section-title">
+                    <h2>Об авторе</h2>
+                </div>
+                <hr>
+                <div>
+                    <p>Меня зовут Денис, когда-то давно друзья называли меня Форвом. Иногда я сочиняю разного рода истории. Некоторые из них превращаются в тексты.</p>
+                    <p>Я занимаюсь «Январскими ивами» в свободное время с января 2017-го года. До этого я написал <a href="https://rumandmetaphors.blogspot.com/">«Ром и метафоры»</a>, городское фэнтези о том, как человек разбирается со своими ошибками.</p>
+                    <p>Если у вас есть ко мне какие-либо вопросы или предложения, лучше всего написать мне на <a href="mailto:d.v.yarullin@gmail.com">почту</a>.</p>
+                </div>
+                <div class="section-title">
                     <h2>Благодарности</h2>
                 </div>
-           </div>
-           <div class="row">
-                <div class = "six columns">
-                    <p class="left">Наталье Андреевне за вдохновение и прекрасную музыку.</p>
-                    <p class="left"><a href="https://t.me/sanya_pishet" target="_blank">Саше</a> за <a href="https://medium.com/@sanyaguseva" target="_blank">чудесные стихи</a>, которыми говорит Дина.</p>
-                    <p class="left"><a href="https://twitter.com/TriumInt" target="_blank">Егору</a> за мудрые научно-технические советы.</p>
+                <hr>
+                <div class="section-grid">
+                    <div><span>Наталье Андреевне за вдохновение.</span></div>
+                    <div><span><a href="https://t.me/sanya_pishet" target="_blank">Саше</a> за <a href="https://medium.com/@sanyaguseva" target="_blank">чудесные стихи</a>.</span></div>
+                    <div><span><a href="https://twitter.com/TriumInt" target="_blank">Егору</a> за мудрые научно-технические советы.</span></div>
+                    <div><span><a href="https://t.me/writeme" target="_blank">Кириллу</a> за ценные советы по дизайну.</span></div>
+                    <div><span><a href="https://vk.com/allina_saga" target="_blank">Алине</a> за завораживающие фотографии.</span></div>
+                    <div><span>Евгении за важные замечания по стилю.</span></div>
                 </div>
-                <div class = "six columns">
-                    <p class="left"><a href="https://t.me/writeme" target="_blank">Кириллу</a> за мудрые советы по дизайну и оформлению.</p>
-                    <p class="left"><a href="https://vk.com/allina_saga" target="_blank">Алине</a> за завораживающие фотографии.</p>
-                    <p class="left">Евгении за редактуру и ценные замечания по стилю.</p>
+                <div>
+                    <p class="poetry">Спасибо дорогой Анне за ежедневную поддержку.</p>
+                    <p class="poetry">Cпасибо вам, что читаете.</p>
                 </div>
-           </div>
-           <div class="row">
-                <div class = "twelve columns">
-                    <p class="poetry">Дорогой Анне за ежедневную поддержку.</p>
-                    <br><p class="left">Спасибо также всем, кто внес свои замечания и предложения по предварительной версии этого проекта.</p>
-                </div>
-           </div>
-       </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class = "twelve columns">
+                <!-- /Content -->
+
+                <!-- Footer -->
+                <div class="footer">
                     <hr>
-                    <p class="bottom"><a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></p>
+                    <div class="footer-social">
+                        <div class="footer-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <span>Для лиц старше 18 лет. <a href="https://mforv.github.io" target="_blank">mforv</a>, 2019.</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class = "twelve columns">
-                    <p class="bottom">Для лиц старше 18 лет. <a href="https://mforv.github.io/" target="_blank">mforv</a>, 2018.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class = "twelve columns">
-                    <p class="bottom"><img src="./assets/willows_logo.png" height="53px"></p>
-                </div>
+                <!-- /Footer -->
             </div>
         </div>
     </div>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {

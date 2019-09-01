@@ -7,11 +7,9 @@
     <title>Январские ивы</title>
     <meta name="description" content="Скандинавский стимпанк о том, как важно называть вещи своими именами."/>
 
-    <meta name="theme-color" content="#42588a" />
-    <link type="text/css" rel="stylesheet" href="css/skeleton.min.css">
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <meta name="theme-color" content="#42588a"/>
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./favicon.png"/>
 
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Январские ивы"/>
@@ -21,7 +19,7 @@
     <meta property="vk:image" content="https://willows.is/img/feature-index-vk.png"/>
     <meta property="og:image" content="https://willows.is/img/feature-index.png"/>
     <meta property="og:image:width" content="600"/>
-    <meta property="og:image:height" content = "300"/>
+    <meta property="og:image:height" content="300"/>
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@heitakringla">
@@ -39,45 +37,129 @@
 
         gtag('config', 'UA-38992446-3');
     </script>
+
+    <script defer src="./js/willows.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="band">
+    <div class="band">
         <div class="container">
-            <div class="face">
-                <div class="columns twelve">
-                    <h1>Январские ивы</h1>
-                    <p class="lead">Скандинавский стимпанк о том, как важно называть вещи своими именами.</p>
+            <!-- Navigation bar -->
+            <div class="nav-bar">
+                <div class="nav-mobile">
+                    <a href="" id="toggle-menu"><i class="fas fa-bars" title="Меню"></i></a>
                 </div>
-                <div class="main-block">
-                    <div class="main-item">
+                <div class="nav-title">
+                    <a href="https://willows.is" class="no-text" title="Январские ивы"></a>
+                </div>
+                <div class="nav-night-mode-mobile">
+                    <a href="" id="night-mode-mobile"><i class="far fa-moon" title="Включить ночной режим"></i></a>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav-item">
                         <a href="./stories">Истории</a>
                     </div>
-                    <span class="main-span">&ensp;</span>
-                    <div class="main-item">
+                    <div class="nav-item">
                         <a href="./books">Книги</a>
                     </div>
-                    <span class="main-span">&ensp;</span>
-                    <div class="main-item">
+                    <div class="nav-item">
                         <a href="./heitakringla">Мир</a>
                     </div>
-                    <span class="main-span">&ensp;</span>
-                    <div class="main-item">
+                    <div class="nav-item">
                         <a href="./heiti">Имена</a>
                     </div>
-                    <span class="main-span">&ensp;</span>
-                    <div class="main-item">
+                    <div class="nav-item">
                         <a href="./project">Проект</a>
+                    </div>
+                    <div class="nav-social">
+                        <div class="nav-night-mode">
+                            <a href="" id="night-mode"><i class="far fa-moon" title="Включить ночной режим"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div style="min-height: 10vh;">
-                <div class="columns twelve">
-                    <p class="lead"><a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i></a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i></a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i></a></p>
+            <!-- /Navigation bar -->
+            
+            <div class="story">
+                <!-- Content -->
+                <div class="willows-logo">
+                    <h1 class="willows-title">Январские ивы</h1>
                 </div>
+                <hr>
+                <div class="main-page">
+                    <div class="highlight-comment">
+                        <span>6 января 2019</span>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-title">
+                            <span>Новая история:</span>
+                        </div>
+                        <div class="highlight-title">
+                            <span><em><a href="./stories/january-memory" target="_blank">Память января</a></em></span>
+                        </div>
+                    </div>
+                    <div class="cite">
+                        <span>Одинокая скала бесстрастно рассекает набегающий холодный океан. Ветер несет запах соли и льда. Координатор Рейнир Ингварссон идет по берегу.</span>
+                    </div>
+                    <div class="highlight">
+                        <div class="start-item">
+                            <a href="./stories/truth">Первая история</a>
+                        </div>
+                        <div class="start-item">
+                            <a href="./stories">Все истории</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="display">
+                        <p>«Январские ивы» — сборник рассказов в стимпанк-антураже с элементами скандинавской эстетики и культуры. Это история о времени, одиночестве и языке, в которой есть место интригам, магии и огромным летающим кораблям.</p>
+                        <p>Следить за выходом новых историй и другими новостями можно в <a href="https://t.me/winter_willows" target="_blank">Телеграме</a>, <a href="https://vk.com/winter_willows" target="_blank">ВКонтакте</a> или <a href="https://twitter.com/heitakringla" target="_blank">Твиттере</a>. Если вы здесь впервые, лучше всего начать чтение c <a href="./stories/truth">начала цикла</a>.</p>
+                        <p>Две первые части также доступны в формате <a href="./books">электронных книг</a>.</p>
+                        <div class="display-books">
+                            <div class="start-item">
+                                <a href="./books"><img src='./assets/ww_book_1_cover.jpg' height="300px"></a>
+                            </div>
+                            <div>
+                                <a href="./books"><img src='./assets/ww_book_2_cover.jpg' height="300px"></a>
+                            </div>
+                        </div>
+                        <p>Спасибо, что читаете!</p>
+                    </div>
+                </div>
+                <!-- /Content -->
+
+
+                <!-- Footer -->
+                <div class="footer">
+                    <hr>
+                    <div class="footer-social">
+                        <div class="footer-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <span>Для лиц старше 18 лет. <a href="https://mforv.github.io" target="_blank">mforv</a>, 2019.</span>
+                    </div>
+                </div>
+                <!-- /Footer -->
             </div>
         </div>
-    </header>
+    </div>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {

@@ -7,9 +7,7 @@
     <title>Январские ивы — Книги</title>
     <meta name="description" content="Скандинавский стимпанк о том, как важно называть вещи своими именами."/>
 
-    <meta name="theme-color" content="#42588a" />
-    <link type="text/css" rel="stylesheet" href="./css/skeleton.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
+    <meta name="theme-color" content="#42588a"/>
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./favicon.png"/>
 
@@ -21,7 +19,7 @@
     <meta property="vk:image" content="https://willows.is/img/feature-books-vk.png"/>
     <meta property="og:image" content="https://willows.is/img/feature-books.png"/>
     <meta property="og:image:width" content="600"/>
-    <meta property="og:image:height" content = "300"/>
+    <meta property="og:image:height" content="300"/>
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@heitakringla">
@@ -39,76 +37,107 @@
 
         gtag('config', 'UA-38992446-3');
     </script>
+
+    <script defer src="./js/willows.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="menu">
+    <div class="band">
         <div class="container">
-                <div class="nav nav-title">
-                    <a href="https://willows.is"><img src="./assets/title.png" width="48px" title="Январские ивы"></a>
+            <!-- Navigation bar -->
+            <div class="nav-bar">
+                <div class="nav-mobile">
+                    <a href="" id="toggle-menu"><i class="fas fa-bars" title="Меню"></i></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./stories">Истории</a><span></span>
-                    <a href="./books">Книги</a>
+                <div class="nav-title">
+                    <a href="https://willows.is" class="no-text" title="Январские ивы"></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./heitakringla">Мир</a><span></span>
-                    <a href="./heiti">Имена</a><span></span>
-                    <a href="./project">Проект</a>
+                <div class="nav-night-mode-mobile">
+                    <a href="" id="night-mode-mobile"><i class="far fa-moon" title="Включить ночной режим"></i></a>
                 </div>
-                <div class="nav nav-social">
-                    <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>&thinsp;
-                    <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>&thinsp;
-                    <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
-                </div>
-        </div>
-    </div>
-    <div class="content main">
-       <div class="container">
-           <div class="row">
-                <div class="four columns">
-                   <h2 style="text-align: center"><img src='./assets/ww_book_1_cover.jpg' height="300px"></h2>
-                </div>
-                <div class="eight columns">
-                    <h2>Книга I</h2>
-                    <p>Книга первая, в которой происходит постепенное знакомство с&nbsp;многочисленными героями повествования, начинается погружение в&nbsp;омут Круга Имен, разыгрывается дебют самой амбициозной партии, а&nbsp;ночь, как водится, приходит нежданно.</p>
-                    <p><i>Включает в себя истории с <a href="./stories/truth">первой</a> по <a href="./stories/nightfall-in-heitakringla-2">двадцать шестую</a>.</i></p>
-                    <p><a href="./books/winter_willows_book_1.pdf" target="_blank">PDF</a>&emsp;<a href="./books/winter_willows_book_1.epub" target="_blank">EPUB</a>&emsp;<a href="./books/winter_willows_book_1.fb2" target="_blank">FB2</a>&emsp;<a href="./books/winter_willows_book_1.mobi" target="_blank">MOBI</a></p>
+                <div class="nav-menu">
+                    <div class="nav-item">
+                        <a href="./stories">Истории</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./books">Книги</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heitakringla">Мир</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heiti">Имена</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./project">Проект</a>
+                    </div>
+                    <div class="nav-social">
+                        <div class="nav-night-mode">
+                            <a href="" id="night-mode"><i class="far fa-moon" title="Включить ночной режим"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-           <div class="row">
-                <div class="four columns">
-                   <h2 style="text-align: center"><img src='./assets/ww_book_2_cover.jpg' height="300px"></h2>
+            <!-- /Navigation bar -->
+
+            <div class="story">
+                <!-- Content -->
+                <div class="section-title">
+                    <h2>Книги</h2>
                 </div>
-                <div class="eight columns">
-                    <h2>Книга II</h2>
-                    <p>Книга вторая, в которой война оказывается ближе, чем&nbsp;казалось, миттельшпиль идет совсем не по плану, правильные ответы ускользают из-под&nbsp;носа, а&nbsp;смерть, как&nbsp;водится, уже&nbsp;стоит за&nbsp;левым плечом.</p>
-                    <p><i>Включает в себя истории с <a href="./stories/fifth-divination">двадцать седьмой</a> по <a href="./stories/nobodys-death-6">шестьдесят вторую</a>.</i></p>
-                    <p><a href="./books/winter_willows_book_2.pdf" target="_blank">PDF</a>&emsp;<a href="./books/winter_willows_book_2.epub" target="_blank">EPUB</a>&emsp;<a href="./books/winter_willows_book_2.fb2" target="_blank">FB2</a>&emsp;<a href="./books/winter_willows_book_2.mobi" target="_blank">MOBI</a></p>
+                <hr>
+                <div class="book-item">
+                    <div class="book-cover"><img src='./assets/ww_book_1_cover.jpg' height="300px"></div>
+                    <div class="book-text">
+                        <h2 class="book-title">Книга I</h2>
+                        <p>Книга первая, в которой происходит постепенное знакомство с&nbsp;многочисленными героями повествования, начинается погружение в&nbsp;омут Круга Имен, разыгрывается дебют самой амбициозной партии, а&nbsp;ночь, как водится, приходит нежданно.</p>
+                        <p><i>Включает в себя истории с <a href="./stories/truth">первой</a> по <a href="./stories/nightfall-in-heitakringla-2">двадцать шестую</a>.</i></p>
+                        <p><a href="./books/winter_willows_book_1.pdf" target="_blank">PDF</a>&emsp;<a href="./books/winter_willows_book_1.epub" target="_blank">EPUB</a>&emsp;<a href="./books/winter_willows_book_1.fb2" target="_blank">FB2</a>&emsp;<a href="./books/winter_willows_book_1.mobi" target="_blank">MOBI</a></p>
+                    </div>
                 </div>
-            </div>
-       </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns">
+                <div class="book-item">
+                    <div class="book-cover"><img src='./assets/ww_book_2_cover.jpg' height="300px"></div>
+                    <div class="book-text">
+                        <h2 class="book-title">Книга II</h2>
+                        <p>Книга вторая, в которой война оказывается ближе, чем&nbsp;казалось, миттельшпиль идет совсем не по плану, правильные ответы ускользают из-под&nbsp;носа, а&nbsp;смерть, как&nbsp;водится, уже&nbsp;стоит за&nbsp;левым плечом.</p>
+                        <p><i>Включает в себя истории с <a href="./stories/fifth-divination">двадцать седьмой</a> по <a href="./stories/nobodys-death-6">шестьдесят вторую</a>.</i></p>
+                        <p><a href="./books/winter_willows_book_2.pdf" target="_blank">PDF</a>&emsp;<a href="./books/winter_willows_book_2.epub" target="_blank">EPUB</a>&emsp;<a href="./books/winter_willows_book_2.fb2" target="_blank">FB2</a>&emsp;<a href="./books/winter_willows_book_2.mobi" target="_blank">MOBI</a></p>
+                    </div>
+                </div>
+                <!-- /Content -->
+
+                <!-- Footer -->
+                <div class="footer">
                     <hr>
-                    <p class="bottom"><a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></p>
+                    <div class="footer-social">
+                        <div class="footer-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <span>Для лиц старше 18 лет. <a href="https://mforv.github.io" target="_blank">mforv</a>, 2019.</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
-                    <p class="bottom">Для лиц старше 18 лет. <a href="https://mforv.github.io/" target="_blank">mforv</a>, 2018.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
-                    <p class="bottom"><img src="./assets/willows_logo.png" height="53px"></p>
-                </div>
+                <!-- /Footer -->
             </div>
         </div>
     </div>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {

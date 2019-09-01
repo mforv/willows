@@ -8,10 +8,8 @@
     <meta name="description" content="Скандинавский стимпанк о том, как важно называть вещи своими именами."/>
 
     <meta name="theme-color" content="#42588a" />
-    <link type="text/css" rel="stylesheet" href="./css/skeleton.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/normalize.css">
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <link rel="icon" type="image/divng" href="./favicon.png"/>
 
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Январские ивы — Имена"/>
@@ -39,264 +37,216 @@
 
         gtag('config', 'UA-38992446-3');
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script defer src="./js/willows.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="menu">
+    <div class="band">
         <div class="container">
-                <div class="nav nav-title">
-                    <a href="https://willows.is"><img src="./assets/title.png" width="48px" title="Январские ивы"></a>
+            <!-- Navigation bar -->
+            <div class="nav-bar">
+                <div class="nav-mobile">
+                    <a href="" id="toggle-menu"><i class="fas fa-bars" title="Меню"></i></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./stories">Истории</a><span></span>
-                    <a href="./books">Книги</a>
+                <div class="nav-title">
+                    <a href="https://willows.is" class="no-text" title="Январские ивы"></a>
                 </div>
-                <div class="nav nav-item">
-                    <a href="./heitakringla">Мир</a><span></span>
-                    <a href="./heiti">Имена</a><span></span>
-                    <a href="./project">Проект</a>
+                <div class="nav-night-mode-mobile">
+                    <a href="" id="night-mode-mobile"><i class="far fa-moon" title="Включить ночной режим"></i></a>
                 </div>
-                <div class="nav nav-social">
-                    <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" aria-hidden="true" title="Ивы в Телеграме"></i></a>&thinsp;
-                    <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" aria-hidden="true" title="Ивы ВКонтакте"></i></a>&thinsp;
-                    <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" aria-hidden="true" title="Ивы в Твиттере"></i></a>
+                <div class="nav-menu">
+                    <div class="nav-item">
+                        <a href="./stories">Истории</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./books">Книги</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heitakringla">Мир</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./heiti">Имена</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="./project">Проект</a>
+                    </div>
+                    <div class="nav-social">
+                        <div class="nav-night-mode">
+                            <a href="" id="night-mode"><i class="far fa-moon" title="Включить ночной режим"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram" title="Ивы в Телеграме"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk" title="Ивы ВКонтакте"></i></a>
+                        </div>
+                        <div class="nav-social-item">
+                            <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter" title="Ивы в Твиттере"></i></a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- /Navigation bar -->
+            
+            <div class="story">
+                <!-- Content -->
+                <div class="section-title">
+                    <h2>Имена</h2>
+                </div>
+                <hr>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-title">Яна</span>
+                        <span>Биохимик из Людлина. Считает, что много чего не выбрала в жизни.</span>
+                        <span>Первое появление: <a href="./stories/truth"><em>Правда — зверь с печальным ликом</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Ольшанский</span>
+                        <span>Влахыньский мар, старший научный сотрудник Института в Людлине.</span>
+                        <span>Первое появление: <a href="./stories/truth"><em>Правда — зверь с печальным ликом</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Полковник Тополевский</span>
+                        <span>Начальник военного контингента Института. Стремится к меньшему из зол.</span>
+                        <span>Первое появление: <a href="./stories/truth"><em>Правда — зверь с печальным ликом</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Смерть</span>
+                        <span>Старшее Имя. Сестра Жизни и Сна. Похожи с сестрой как две капли воды. Красива, милостива и непреклонна.</span>
+                        <span>Первое появление: <a href="./stories/dialogues-1"><em>Диалоги: сестра, брат, сестра</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Сон</span>
+                        <span>Старшее Имя. Брат Смерти и Жизни. Его истории редко заканчивются хорошо для окружающих.</span>
+                        <span>Первое появление: <a href="./stories/dialogues-1"><em>Диалоги: сестра, брат, сестра</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Жизнь</span>
+                        <span>Старшее Имя. Сестра Смерти и Сна. Похожи с сестрой как две капли воды. Добра, холодна и недосягаема.</span>
+                        <span>Первое появление: <a href="./stories/dialogues-1"><em>Диалоги: сестра, брат, сестра</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Эрик Густафссон</span>
+                        <span>Солдат Унии, родом из северной Свартриге. Твердо убежден, что дома лучше.</span>
+                        <span>Первое появление: <a href="./stories/en-eriks-dag"><em>Один день Эрика Густафссона</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Рейнир Ингварссон</span>
+                        <span>Светоносный родом с Синдвари. Не любит говорить о праве выбора.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Лиам</span>
+                        <span>Светоносный, координатор. Родом из Руннемары, но предпочитает не распространятся о своем прошлом.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Полковник Хеннингсен</span>
+                        <span>Светоносный, командир альдмаркского дредноута «Дыхание севера». Привык хорошо делать свою работу.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Дана фон Химмельсберг</span>
+                        <span>Светоносная, слишком красивая и слишком умная, чтобы этим не пользоваться. Годенбуржская дворянка по происхождению.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Герцогиня Соммервальд</span>
+                        <span>Влиятельная и богатая светоносная из Годенбурга, хозяйка замка Волькенштайн.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Максимилиан Форнхофт</span>
+                        <span>Светоносный из Годенбурга, с которым лучше не ссориться. Из всех цветов предпочитает серый.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Дина Ивинская</span>
+                        <span>Молодая поэтесса, стремительно набирающая популярность по обе стороны Завесы.</span>
+                        <span>Первое появление: <a href="./stories/lady-sorrow-welcomes"><em>Вечер у леди Скорбь</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Эйнгинн, он же Никто</span>
+                        <span>Загадочный отшельник с острова Скарагосс, последний заклинатель левиафанов.</span>
+                        <span>Первое появление: <a href="./stories/skaragoss"><em>Звери острова Скарагосс</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Хведрунг, он же Поднимающий Бурю</span>
+                        <span>Безымянный, известный возмутитель спокойствия. Легко наживает себе врагов, но друзей почему-то меньше не становится.</span>
+                        <span>Первое появление: <a href="./stories/skaragoss"><em>Звери острова Скарагосс</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Король былого и грядущего</span>
+                        <span>Безымянный, меланхоличный поэт и мудрый исследователь Эфира.</span>
+                        <span>Первое появление: <a href="./stories/dialogues-3"><em>Диалоги: два короля</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Король в желтом</span>
+                        <span>Безымянный с репутацией жестокого воителя. Желтого не носит.</span>
+                        <span>Первое появление: <a href="./stories/dialogues-3"><em>Диалоги: два короля</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Адам</span>
+                        <span>Мар. По человеческим меркам его можно считать братом Ольшанского.</span>
+                        <span>Первое появление: <a href="./stories/adam"><em>Адам</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Хельгесен</span>
+                        <span>Лучший из пилотов «Дыхания севера». Чувствует Эфир на кончиках пальцев.</span>
+                        <span>Первое появление: <a href="./stories/the-colours-of-silence"><em>Цвета тишины</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Аглая</span>
+                        <span>Светоносная из Гардвельда. Координатор, одна из лучших в своем деле.</span>
+                        <span>Первое появление: <a href="./stories/the-colours-of-silence"><em>Цвета тишины</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Вильгельм Зауэр</span>
+                        <span>Светоносный, мастер превращения маленькой войны в большие деньги.</span>
+                        <span>Первое появление: <a href="./stories/die-geschäftsmänner"><em>Деловые люди</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Полый Скрипач</span>
+                        <span>Командир проклятого дредноута «Дух мщения». Впрочем, многие считают, что не стоит верить легендам о призраке, навеки обреченном бороздить просторы Эфира.</span>
+                        <span>Первое появление: <a href="./stories/ye-be-not-judged"><em>Да не судимы будете</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Белый герцог</span>
+                        <span>Светоносный, превыше всего ценящий порядок.</span>
+                        <span>Первое появление: <a href="./stories/mists-of-emain"><em>Туманы Эмайна</em></a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Полынь</span>
+                        <span>Мара, у которой сложные отношения со звездами и собственным разумом.</span>
+                        <span>Первое появление: <a href="./stories/stranger-thoughts-1"><em>Чужие мысли</em></a></span>
+                    </div>
+                </div>
+                    <!-- /Content -->
+                    
+                    <!-- Footer -->
+                    <div class="footer">
+                        <hr>
+                        <div class="footer-social">
+                            <div class="footer-item">
+                                <a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>
+                    </div>
+                    <div class="footer-item">
+                        <a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>Для лиц старше 18 лет. <a href="https://mforv.github.io" target="_blank">mforv</a>, 2019.</span>
+                </div>
+            </div>
+            <!-- /Footer -->
+            </div>
         </div>
     </div>
-    <div class="content main">
-       <div class="container">
-           <div class = "twelve columns">
-                <h2>Имена</h2>
-            </div>
-            <div class="row">
-                <div class = "nav-inner">
-                    <a id="link_chars"></a>
-                </div>
-                <div class = "nav-inner">
-                    <a id="link_heiti"></a>
-                </div>
-                <div class = "nav-inner">
-                    <a id="link_nameless"></a>
-                </div>
-            </div>
-            <noscript>
-                <div class="row">
-                    <div class = "nav-inner">
-                        <a id="link_chars" href="#characters">Персонажи</a>
-                    </div>
-                    <div class = "nav-inner">
-                        <a id="link_heiti" href="#heiti">Имена</a>
-                    </div>
-                    <div class = "nav-inner">
-                        <a id="link_nameless" href="#nameless">Безымянные</a>
-                    </div>
-                </div>
-            </noscript>
-           <div id="characters">
-                <hr>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Яна</h3>
-                        <p class="left"><i>Людлин, Гардвельд</i></p>
-                        <p class="left">Ученая в Людлинском Институте. Много чего не выбрала в жизни.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Ольшанский</h3>
-                        <p class="left"><i>Людлин, Гардвельд</i></p>
-                        <p class="left">Мар. Старший научный сотрудник Людлинского Института. Трудоголик.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Адам</h3>
-                        <p class="left"><i>Влахынь</i></p>
-                        <p class="left">Мар и (не) брат Ольшанского. Питает слабость к эффектным появлениям.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Рейнир Ингварссон</h3>
-                        <p class="left"><i>Дредноут «Дыхание севера»</i></p>
-                        <p class="left">Светоносный, недавно ставший координатором. Не любит говорить о праве выбора.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Лиам</h3>
-                        <p class="left"><i>Дредноут «Дыхание севера»</i></p>
-                        <p class="left">Светоносный. Координатор. Настоящий руннемарец, достойный поцелуя.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Аглая</h3>
-                        <p class="left"><i>Дредноут «Сокол Империи»</i></p>
-                        <p class="left">Светоносная. Координатор. Не знает себе равных во владении клинком и острым взглядом.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Полковник Тополевский</h3>
-                        <p class="left"><i>Людлин, Гардвельд</i></p>
-                        <p class="left">Начальник военного контингента Института. Стремится к меньшему из зол.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Полковник Хеннингсен</h3>
-                        <p class="left"><i>Дредноут «Дыхание севера»</i></p>
-                        <p class="left">Светоносный, командир «Дыхания севера». Привык хорошо делать свою работу.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Хельгесен</h3>
-                        <p class="left"><i>Дредноут «Дыхание севера»</i></p>
-                        <p class="left">Лучший из пилотов «Дыхания севера». Чувствует Эфир на кончиках пальцев.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Эрик Густафссон</h3>
-                        <p class="left"><i>Северо-Западный фронт</i></p>
-                        <p class="left">Солдат Унии, родом из северной Свартриге. Твердо убежден, что дома лучше.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Максимилиан Форнхофт</h3>
-                        <p><i>Безымянный город</i></p>
-                        <p class="left">Светоносный, с которым лучше не ссориться. Из всех цветов предпочитает серый.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Вильгельм Зауэр</h3>
-                        <p class="left"><i>Безымянный город</i></p>
-                        <p class="left">Светоносный, стоящий в тени. Мастер превращения маленькой войны в большие деньги.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Дана фон Химмельсберг</h3>
-                        <p><i>Ундина</i></p>
-                        <p class="left">Светоносная, слишком красивая и слишком умная, чтобы этим не пользоваться. </p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Полынь</h3>
-                        <p><i>?</i></p>
-                        <p class="left">Мара, у которой сложные отношения со звездами и собственным разумом.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Дина Ивинская</h3>
-                        <p><i>?</i></p>
-                        <p class="left">Молодая поэтесса, стремительно набирающая популярность по обе стороны Завесы.</p>
-                    </div>
-                </div>
-           </div>
-           <!-- Изреченные Имена -->
-           <div id="heiti">
-                <hr>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Смерть</h3>
-                        <p class="left"><i>Дальний Эфир</i></p>
-                        <p class="left">Старшее Имя. Сестра Жизни и Сна. Похожи с сестрой как две капли воды. Красива, милостива и непреклонна.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Сон</h3>
-                        <p class="left"><i>Дальний Эфир</i></p>
-                        <p class="left">Старшее Имя. Брат Смерти и Жизни. Его истории редко заканчивются хорошо для окружающих.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Жизнь</h3>
-                        <p class="left"><i>Дальний Эфир</i></p>
-                        <p class="left">Старшее Имя. Сестра Смерти и Сна. Похожи с сестрой как две капли воды. Добра, холодна и недосягаема.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Скорбь</h3>
-                        <p class="left"><i>Шепчущий дом, Закатный край</i></p>
-                        <p class="left">Старшее Имя. Новая Скорбь изрекла свое Имя относительно недавно, но уже успела многое поменять в мире.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Страх</h3>
-                        <p class="left"><i>Багровый лабиринт, Эмер</i></p>
-                        <p class="left">Старшее Имя. В последнем воплощении довольно молод и экстравагантен. Стремится открывать в людях новые грани.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Страсть</h3>
-                        <p class="left"><i>Диона</i></p>
-                        <p class="left">Старшее Имя. Придерживается на удивление пуританских взглядов. Поддерживает философию Геометров.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Война</h3>
-                        <p class="left"><i>?</i></p>
-                        <p class="left">Старшее Имя. Почти век назад последний известный Война пропал, решив, что должен сберечь мир от себя самого.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3></h3>
-                        <p class="left"><i></i></p>
-                        <p class="left"></p>
-                    </div>
-                    <div class = "four columns">
-                        <h3></h3>
-                        <p class="left"><i></i></p>
-                        <p class="left"></p>
-                    </div>
-                </div>
-           </div>
-           <!-- Безымянные -->
-           <div id="nameless">
-                <hr>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Король в желтом</h3>
-                        <p class="left"><i>Эфир</i></p>
-                        <p class="left">Странник и безжалостный воитель, чья кровавая репутация всегда идет впереди него. Желтого не носит.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Король былого и грядущего</h3>
-                        <p class="left"><i>Дредноут «Королевство слез»</i></p>
-                        <p class="left">Меланхоличный поэт и мудрый исследователь Эфира. Обладатель очень интересного взгляда на мир.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Поднимающий Бурю</h3>
-                        <p class="left"><i>?</i></p>
-                        <p class="left">Известный возмутитель спокойствия. Легко наживает себе врагов, но друзей почему-то меньше не становится.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "four columns">
-                        <h3>Черный Сотник</h3>
-                        <p class="left"><i>Внешние Небеса</i></p>
-                        <p class="left">Прославленный командир и опытный наемник. Ведет свою личную войну против фракций, и повод у него веский.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3>Полый Скрипач</h3>
-                        <p class="left"><i>Дредноут «Дух мщения»</i></p>
-                        <p class="left">Есть легенды о призраке, навеки обреченном бороздить просторы Эфира на своем проклятом дредноуте. Им мало кто верит.</p>
-                    </div>
-                    <div class = "four columns">
-                        <h3></h3>
-                        <p class="left"><i></i></p>
-                        <p class="left"></p>
-                    </div>
-                </div>
-           </div>
-           <!-- == -->
-       </div>
-    </div>
-       <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class = "twelve columns">
-                        <hr>
-                        <p class="bottom"><a href="https://t.me/winter_willows" target="_blank"><i class="fab fa-telegram"></i>&nbsp;Telegram</a>&emsp;<a href="https://vk.com/winter_willows" target="_blank"><i class="fab fa-vk"></i>&nbsp;VK</a>&emsp;<a href="https://twitter.com/heitakringla" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "twelve columns">
-                        <p class="bottom">Для лиц старше 18 лет. <a href="https://mforv.github.io/" target="_blank">mforv</a>, 2018.</p>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class = "twelve columns">
-                            <p class="bottom"><img src="./assets/willows_logo.png" height="53px"></p>
-                        </div>
-                </div>
-            </div>
-       </div>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
@@ -324,61 +274,5 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/41885434" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-    <!-- Tabs Scripts -->
-    <script>
-        var tab_elements = ['#link_chars', '#link_heiti', '#link_nameless'];
-        var tabs = ['Персонажи', 'Имена', 'Безымянные'];
-        var content_elements = ['#characters', '#heiti', '#nameless'];
-        var scroll_pos = 0;
-
-        $(window).scroll(function() { scroll_pos = $(window).scrollTop(); });
-
-        $('load', function()
-        {
-            $(tab_elements[0]).html(tabs[0]);
-            $(tab_elements[1]).html('<a href="">'+ tabs[1] +'</a>');
-            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
-            $(content_elements[0]).show();
-            $(content_elements[1]).hide();
-            $(content_elements[2]).hide();
-        });
-
-        $(tab_elements[0]).on('click', function(event)
-        {
-            event.preventDefault();
-            $(tab_elements[0]).html(tabs[0]);
-            $(tab_elements[1]).html('<a href="">'+ tabs[1] +'</a>');
-            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
-            $(content_elements[0]).fadeIn(600);
-            $(content_elements[1]).hide();
-            $(content_elements[2]).hide();
-            window.scroll(0, scroll_pos);
-        });
-
-        $(tab_elements[1]).on('click', function(event)
-        {
-            event.preventDefault();
-            $(tab_elements[0]).html('<a href="">' + tabs[0] + '</a>');
-            $(tab_elements[1]).html(tabs[1]);
-            $(tab_elements[2]).html('<a href="">' + tabs[2] + '</a>');
-            $(content_elements[0]).hide();
-            $(content_elements[1]).fadeIn(600);
-            $(content_elements[2]).hide();
-            window.scroll(0, scroll_pos);
-        });
-
-        $(tab_elements[2]).on('click', function(event)
-        {
-            event.preventDefault();
-            $(tab_elements[0]).html('<a href="">' + tabs[0] + '</a>');
-            $(tab_elements[1]).html('<a href="">' + tabs[1] + '</a>');
-            $(tab_elements[2]).html(tabs[2]);
-            $(content_elements[0]).hide();
-            $(content_elements[1]).hide();
-            $(content_elements[2]).fadeIn(600);
-            window.scroll(0, scroll_pos);
-        });
-
-    </script>
 </body>
 </html>
