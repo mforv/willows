@@ -15,7 +15,7 @@ hr {
     background-position: center top;
     background-color: #42588a;
     background-size: auto;
-    background-attachment: fixed;
+    background-attachment: scroll;
     min-height: 100vh;
 }
 
