@@ -16,7 +16,7 @@ hr {
     background-color: #42588a;
     background-size: auto;
     background-attachment: scroll;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
