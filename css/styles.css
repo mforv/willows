@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600');
 
-body { font-family: 'EB Garamond', serif; color: #111; margin: 0; }
+body { 
+    font-family: 'EB Garamond', serif; 
+    color: #111; 
+    margin: 0; 
+    background-image: url("../assets/willows_back.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #42588a;
+    background-size: auto;
+    background-attachment: fixed;
+}
 
 hr { 
     border-width: 0;
@@ -10,12 +20,6 @@ hr {
 }
 
 .band {
-    background-image: url("../assets/willows_back.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #42588a;
-    background-size: auto;
-    background-attachment: fixed;
     min-height: 100vh;
 }
 
