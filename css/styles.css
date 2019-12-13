@@ -61,10 +61,11 @@ hr {
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
+    gap: 1em;
+    margin-left: 1em;
 }
 
 .nav-item {
-    margin-left: 1em;
     font-weight: 600;
 }
 
@@ -78,6 +79,8 @@ hr {
 
 .nav-menu.on {
     display: flex;
+    margin: 0.5em 0 0 0;
+    gap: 0.5em;
 }
 
 .story {
@@ -92,7 +95,7 @@ hr {
     grid-auto-flow: column;
     grid-template-rows: repeat(var(--nr), max-content);
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1em;
+    column-gap: 1em;
 }
 
 .story-item {
@@ -169,7 +172,7 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
 
 .main-page {
     display: grid;
-    grid-row-gap: 0.25em;
+    row-gap: 0.25em;
     margin: 0.5em 0 0 0;
 }
 
@@ -206,7 +209,7 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 1.2em;
+    gap: 1.2em;
 }
 
 .book-title {
@@ -227,14 +230,14 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
 .section-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 0.5em;
+    row-gap: 0.5em;
     align-items: center;
     margin-bottom: 1em;
 }
 
 .info-grid {
     display: grid;
-    grid-row-gap: 1em;
+    row-gap: 1em;
     margin: 0.5em 0;
 }
 
@@ -275,9 +278,6 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
         width: 100%;
         justify-content: center;
         text-align: center;
-    }
-    .nav-item {
-        margin: 0 0 0.5em 0;
     }
     .nav-social {
         margin-left: 0;
