@@ -58,11 +58,12 @@ nav {
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
-    gap: 1em;
-    margin-left: 1em;
+    /* gap: 1em;
+    margin-left: 1em; */
 }
 
 .nav-item {
+    margin-left: 1em;
     font-weight: 600;
 }
 
@@ -76,8 +77,8 @@ nav {
 
 .nav-menu.on {
     display: flex;
-    margin: 0.5em 0 0 0;
-    gap: 0.5em;
+    /* margin: 0.5em 0 0 0;
+    gap: 0.5em; */
 }
 
 .story {
@@ -272,6 +273,9 @@ footer {
         width: 100%;
         justify-content: center;
         text-align: center;
+    }
+    .nav-item {
+        margin: 0 0 0.5em 0;
     }
     .nav-social {
         margin-left: 0;
