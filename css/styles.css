@@ -29,11 +29,9 @@ hr {
     max-width: 960px;
     margin: 0 auto;
     font-size: 24px;
-    /* grid-template-rows: 66px auto; */
-    /* min-height: 100vh; */
 }
 
-.nav-bar {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +52,6 @@ hr {
     background-size: 2.5em;
     flex-basis: 2.5em;
     height: 2.5em;
-    /* margin: 0.25em 0; */
 }
 
 .nav-menu {
@@ -129,7 +126,7 @@ p {
 p.date { text-align: right; font-style: italic; }
 p.poetry { text-align: center; font-style: italic; line-height: 1em; }
 
-.footer {
+footer {
     display: grid;
     margin: 0 auto;
 }
@@ -162,10 +159,7 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
 .willows-title {
     font-size: 2.25em;
     margin: 0;
-    /* margin-top: 1em; */
     margin-bottom: 0.25em;
-    /* text-align: center; */
-    /* color: #1c2436; */
     font-weight: 400;
     letter-spacing: -.1rem;
 }
@@ -265,7 +259,7 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
         padding: 0 0.5em;
     }
     
-    .nav-bar {
+    nav {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
@@ -302,7 +296,6 @@ p.poetry { text-align: center; font-style: italic; line-height: 1em; }
     
     .story {
         padding: 0.5em;
-        /* margin: 0.5em; */
     }
 
     .stories-list {
